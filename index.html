@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HAGEN - official website. Music, shows, merch, and everything that remains.">
+  <title>HAGEN | Official Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader"><div class="loader-mark">H</div><div class="loader-line"></div></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home">HAGEN</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#music">Music</a>
+      <a href="#story">Story</a>
+      <a href="#shows">Shows</a>
+      <a href="#merch">Merch</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="embers" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">ALABAMA • HARD ROCK</p>
+        <h1>HAGEN</h1>
+        <p class="tagline">SCARS MADE SOUND.</p>
+        <div class="hero-buttons">
+          <a class="button primary" href="#music">LISTEN NOW</a>
+          <a class="button" href="#shows">SEE THE SHOWS</a>
+        </div>
+      </div>
+      <div class="scroll-cue">SCROLL ↓</div>
+    </section>
+
+    <section id="music" class="section">
+      <div class="section-heading reveal">
+        <span>01</span>
+        <h2>THE MUSIC</h2>
+      </div>
+      <div class="music-grid">
+        <article class="release-card reveal">
+          <div class="cover"><div class="cover-text">HAGEN</div><div class="cover-sub">WHAT REMAINS</div></div>
+          <div class="release-info">
+            <p class="kicker">LATEST RELEASE</p>
+            <h3>WHAT REMAINS</h3>
+            <p>Heavy guitars. Open wounds. Loud truths. Press play and let it hurt.</p>
+            <div class="links">
+              <a href="#" onclick="demoLink(event)">Spotify</a>
+              <a href="#" onclick="demoLink(event)">Apple Music</a>
+              <a href="#" onclick="demoLink(event)">YouTube</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="track-list reveal">
+          <div class="track" data-track="01"><span>01</span><strong>WHAT REMAINS</strong><button onclick="fakePlay(this)">▶</button></div>
+          <div class="track" data-track="02"><span>02</span><strong>SCARS</strong><button onclick="fakePlay(this)">▶</button></div>
+          <div class="track" data-track="03"><span>03</span><strong>EVERY OUNCE</strong><button onclick="fakePlay(this)">▶</button></div>
+          <div class="track" data-track="04"><span>04</span><strong>WELCOME HOME</strong><button onclick="fakePlay(this)">▶</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="section story">
+      <div class="section-heading reveal"><span>02</span><h2>THE STORY</h2></div>
+      <div class="story-grid">
+        <div class="story-copy reveal">
+          <p class="big">WE DON'T WRITE ABOUT PERFECT LIVES.</p>
+          <p>Hagen is built around the things people carry when nobody is watching: scars, loss, anger, love, survival, and the stubborn decision to keep moving.</p>
+          <p>The songs live somewhere between hard rock and metal, balancing crushing guitars with melodies that refuse to stay buried.</p>
+        </div>
+        <div class="quote reveal">“SOME THINGS BREAK YOU.<br><em>SOME THINGS BECOME YOU.</em>”</div>
+      </div>
+    </section>
+
+    <section id="shows" class="section">
+      <div class="section-heading reveal"><span>03</span><h2>LIVE</h2></div>
+      <div class="shows">
+        <div class="show reveal"><div><small>DATE</small><strong>COMING SOON</strong></div><div><small>VENUE</small><strong>ANNOUNCEMENT PENDING</strong></div><a class="button small" href="#contact">BOOK HAGEN</a></div>
+        <div class="empty-state reveal">NO SHOWS ANNOUNCED YET.<br><span>THE QUIET WON'T LAST.</span></div>
+      </div>
+    </section>
+
+    <section id="merch" class="section merch">
+      <div class="section-heading reveal"><span>04</span><h2>MERCH</h2></div>
+      <div class="merch-grid">
+        <article class="product reveal"><div class="product-art">H<br><small>HAGEN</small></div><h3>HAGEN TEE</h3><p>OFFICIAL BAND SHIRT</p><button onclick="demoLink(event)">SHOP SOON</button></article>
+        <article class="product reveal"><div class="product-art">HAGEN<br><small>EST. 2026</small></div><h3>HOODIE</h3><p>HEAVYWEIGHT / LIMITED</p><button onclick="demoLink(event)">SHOP SOON</button></article>
+        <article class="product reveal"><div class="product-art">WR</div><h3>WHAT REMAINS</h3><p>ARTWORK COLLECTION</p><button onclick="demoLink(event)">SHOP SOON</button></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-heading reveal"><span>05</span><h2>CONTACT</h2></div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="big">BOOKING / PRESS / GENERAL INQUIRIES</p>
+          <a class="email" href="mailto:hagenscreed26@gmail.com">hagenscreed26@gmail.com</a>
+        </div>
+        <form class="contact-form reveal" onsubmit="sendMessage(event)">
+          <input required name="name" placeholder="YOUR NAME">
+          <input required type="email" name="email" placeholder="YOUR EMAIL">
+          <textarea required name="message" rows="5" placeholder="MESSAGE"></textarea>
+          <button class="button primary" type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">HAGEN</div>
+    <div class="socials">
+      <a href="#" onclick="demoLink(event)">INSTAGRAM</a>
+      <a href="#" onclick="demoLink(event)">FACEBOOK</a>
+      <a href="#" onclick="demoLink(event)">YOUTUBE</a>
+      <a href="#" onclick="demoLink(event)">TIKTOK</a>
+    </div>
+    <p>© <span id="year"></span> HAGEN. ALL RIGHTS RESERVED.</p>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
